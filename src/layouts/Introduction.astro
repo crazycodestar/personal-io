@@ -1,0 +1,38 @@
+---
+import {Icon} from "astro-icon"
+import {Image} from "@astrojs/image/components";
+import profile from "../../public/assets/profile.jpg";
+---
+
+<!-- introduction page -->
+<div class="px-8">
+
+<div class="flex mt-24 ">
+  <div class="w-">
+    <div class="flex space-x-4 items-center">
+    <Image src={profile} alt="lekan" class="w-32 mb-4 rounded-md" />
+    <div>
+      <h1 class="font-bold text-xl tracking-wider">Olalekan Adekanmbi</h1>
+      <p>Fullstack software engineer</p>
+    </div>
+    </div>
+    <h1 class="font-Roboto text-lg leading-relaxed">Hi,</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquid recusandae nostrum porro reprehenderit id? Minima a consectetur, culpa consequatur maxime quam deserunt eaque ea explicabo, numquam eum, laborum ad. Eius harum corrupti ex. Saepe delectus eveniet aut doloremque tempora?</p>
+  </div>
+  <!-- my picture here -->
+  <div />
+</div>
+<!-- contact page -->
+<div>
+  <h1 class="font-Roboto text-lg leading-relaxed mt-4 font-semibold">Contact me</h1>
+  <div>
+  <!-- Email component  -->
+  <p><span class="tracking-widest">---</span> or <span class="tracking-widest">---</span></p>
+  <div class="flex space-x-4">
+    <Icon pack="mdi" name="twitter" class="w-8" />
+    <Icon pack="mdi" name="github" class="w-8"  />
+    <Icon pack="mdi" name="linkedin" class="w-8"  />
+  </div>
+  </div>
+</div>
+</div>

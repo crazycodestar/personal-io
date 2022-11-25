@@ -1,0 +1,24 @@
+{
+	"projects": [
+		{
+			"id": 1,
+			"name": "Algrora",
+			"imageSrc": "src/assets/images",
+			"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam tempore nesciunt explicabo soluta earum nulla ad molestiae sit eaque.",
+			"features": ["things here", "another thing here"],
+			"stack": ["images/sources"],
+			"liveSiteUrl": "http://localhost:3000",
+			"gitRepoUrl": "http://github.com/crazycodestart?repo=\"algrora-v1\""
+		},
+		{
+			"id": 1,
+			"name": "Algrora",
+			"imageSrc": "src/assets/images",
+			"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam tempore nesciunt explicabo soluta earum nulla ad molestiae sit eaque.",
+			"features": ["things here", "another thing here"],
+			"stack": ["images/sources"],
+			"liveSiteUrl": "http://localhost:3000",
+			"gitRepoUrl": "http://github.com/crazycodestart?repo=\"algrora-v1\""
+		}
+	]
+}
