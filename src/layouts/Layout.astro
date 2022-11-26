@@ -16,9 +16,14 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<div class="one" />
+		<div class="two" />
+		<div class="three" />
+		<!-- <div class="four" /> -->
 		<slot />
 	</body>
 </html>
+
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;
@@ -31,5 +36,41 @@ const { title } = Astro.props;
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+	body {
+		padding-top: 40px;
+		position: relative;
+	}
+	.one {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 400px;
+		height: 400px;
+		background-color: #d6f4ff;
+		filter: blur(50px);
+		z-index: -1;
+		border-radius: 100%;
+	}
+	.two {
+		--size: 500px;
+		position: absolute;
+		top: 30px;
+		right: 50px;
+		width: var(--size);
+		height: var(--size);
+		background-color: #d6ffe5;
+		filter: blur(50px);
+		z-index: -1;
+		border-radius: 100%;
+	}
+	.three {
+		background-color: #FAF9F6;
+		/* background-color: red; */
+		position: absolute;
+		z-index: -2;
+		height: 100%;
+		width: 100%;
+
 	}
 </style>
