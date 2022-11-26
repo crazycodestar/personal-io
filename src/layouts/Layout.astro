@@ -25,13 +25,9 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+		background-color: white;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
@@ -65,8 +61,7 @@ const { title } = Astro.props;
 		border-radius: 100%;
 	}
 	.three {
-		background-color: #FAF9F6;
-		/* background-color: red; */
+		background-color: white;
 		position: absolute;
 		z-index: -2;
 		height: 100%;
