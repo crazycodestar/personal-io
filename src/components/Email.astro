@@ -1,0 +1,20 @@
+---
+// I just put it there by default now
+---
+
+<div class="flex space-x-2">
+  <div class="rounded-md py-2 px-4 border-pink-900 border-2 bg-zinc-100 cursor-pointer"><p>olamilekanadekanmbi@gmail.com</p></div>
+  <button id="emailBtn" class="capitalize px-4 py-2 bg-pink-900 text-white rounded-md flex justify-center items-center cursor-pointer hover:bg-pink-700 active:bg-pink-800">Copy</button>
+</div>
+
+<script>
+  const emailBtn = document.querySelector("#emailBtn");
+  const email = "olamilekanadekanmbi@gmail.com"
+
+  if (emailBtn) emailBtn.addEventListener("click", () => {
+    console.log("cllicking")
+    navigator.clipboard.writeText(email);
+    emailBtn.innerHTML = "copied"
+    setTimeout(() => emailBtn.innerHTML = "copy", 5000)
+  })
+</script>

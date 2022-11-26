@@ -2,25 +2,15 @@
 import Introduction from '../layouts/Introduction.astro';
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../layouts/Navbar.astro';
-import projectsJSON from "../../public/projects.json";
+import Projects from '../layouts/Projects.astro';
+import Contact from "../layouts/Contact.astro"
 ---
 
 <Layout title="Welcome to Astro.">
-	
+	<div class="max-w-[1000px] px-6 mx-auto space-y-12 font-Roboto">
 	<Navbar />
-	<Introduction />
-	<!-- Projects -->
-	<div>
-		<div>
-			<h1>Projects</h1>
-			<span>btw: this personal site was made with astrojs</span>
-		</div>
-		<!-- projects -->
-		<div>
-			{projectsJSON.projects.map(project => {
-				return <pre>{JSON.stringify(project, null, 2)}</pre>
-			})}
-		</div>
+		<Introduction />
+		<Projects />
+		<Contact />
 	</div>
-
 </Layout>
